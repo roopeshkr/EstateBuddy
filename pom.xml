@@ -11,8 +11,27 @@
     <groupId>com.EstateBuddy</groupId>
     <artifactId>EstateBuddy</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <name>EstateBuddy</name>
     <description>Real Estate Project</description>
+    <modules>
+        <module>user-service</module>
+        <module>authentication-service</module>
+        <module>property-service</module>
+        <module>search-service</module>
+        <module>notification-service</module>
+        <module>booking-service</module>
+        <module>communication-service</module>
+        <module>review-service</module>
+        <module>transaction-service</module>
+        <module>analytics-service</module>
+        <module>admin-service</module>
+        <module>logging-and-monitoring-service</module>
+        <module>file-service</module>
+        <module>eureka-server</module>
+        <module>api-gateway</module>
+        <module>product-webapp</module>
+    </modules>
     <properties>
         <java.version>17</java.version>
     </properties>
@@ -42,7 +61,7 @@
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
+                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <configuration>
                     <excludes>
                         <exclude>
